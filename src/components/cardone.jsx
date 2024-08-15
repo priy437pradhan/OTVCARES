@@ -1,7 +1,10 @@
 
 const Card = ({ imgSrc, headline, description, label }) => {
   return (
+ 
     <div className="relative max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl hover:border hover:border-blue-300">
+     
+     
       {label && (
         <span className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">
           {label}
@@ -27,6 +30,7 @@ const Card = ({ imgSrc, headline, description, label }) => {
         </a>
       </div>
     </div>
+  
   );
 };
 
